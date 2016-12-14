@@ -1,12 +1,11 @@
-<hr>
 # Obstacle-Detection-and-Path-Planning
 
-Path planning is a technique used for find the shortest path between a source and destination.
-Path planning ensures that navigation is done in least time and in most optimized way, saving energy and providing a optimized way of the doing task.
 
-### Given:
+#Overview
 
-A set of test images, each containing
+This is the code for [this](https://youtu.be/2cQK_brSVvo) video on youtube by @sirajology .Path planning is a technique used for find the shortest path between a source and destination. Path planning ensures that navigation is done in least time and in most optimized way, saving energy and providing a optimized way of the doing task.
+
+We have a set of test images, each containing
 
 1. 10x10 grid, making 100 squares
 2. Obstacles marked as black square
@@ -17,7 +16,7 @@ A set of test images, each containing
 The squares are identified by the coordinate (x,y) where x is the column and y is the row to which the square belongs. Each square
 can be empty or have an Obstacle or have an Object.
 
-### The program returns 2 major findings:
+The program returns 2 major findings:
 
 <img src="https://raw.githubusercontent.com/Aniruddha-Tapas/Obstacle-Detection-and-Path-Planning/master/screenshot.png" />
 
@@ -36,19 +35,6 @@ The code return a python dictionary. Format for creating dictionary is as follow
 * first element of dictionary is a tuple - (x,y) coordinate of an object nearest to it
 * second element is a list of tuples having (x,y) coordinate of all grids traversed i.e all route path
 * third element of dictionary should be number of moves taken for traversal
-
-
-##Basic Usage
-
-Run `main.py` to check the results.
-You can edit the test image from main.py to see different results.
-
-The `process_image.py` contains the major code.
-Check that script to see the main functionality.
-Follow the comments to undertand the code better.
-
-`astarsearch.py` contains the implemenatation of A* search algo. 
-`traversal.py` contains the script to traverse through the image to find objects/min path. 
 
 ##Dependencies
 
@@ -71,4 +57,18 @@ Open command prompt and type in:
 ```pip install numpy```
 
 
-<hr>
+#Usage
+
+Run `main.py` to check the results.
+You can edit the test image from main.py to see different results.
+
+The `process_image.py` contains the major code.
+Check that script to see the main functionality.
+Follow the comments to undertand the code better.
+
+`astarsearch.py` contains the implemenatation of A* search algo. 
+`traversal.py` contains the script to traverse through the image to find objects/min path. 
+
+#Credits
+
+The credits for this code go to [Annirudha](https://github.com/Aniruddha-Tapas) i've merely created a wrapper to get people started.
